@@ -1,0 +1,258 @@
+body {
+  font-family: "Oswald", sans-serif;
+  background: linear-gradient(to right, #4a1581, #0d3271);
+  color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
+
+.Search {
+  height: 100%;
+  background: rgb(238, 231, 231);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  margin-top: 10px;
+}
+.Search h1 {
+  margin-top: 5%;
+  color: rgb(0, 0, 151);
+  font-size: 72px;
+}
+.Search h2 {
+  margin-top: 5%;
+  color: rgb(30, 30, 161);
+  font-size: 32px;
+  font-weight: 700;
+}
+.Search h4 {
+  color: rgb(13, 13, 63);
+  font-size: 30px;
+}
+.Search input {
+  margin: 1% 15px;
+  width: 50%;
+  height: 50px;
+  border: rgb(63, 0, 135) 2px solid;
+  border-radius: 10px;
+  background-color: #ffffff;
+  color: rgb(0, 0, 0);
+}
+.Search button {
+  transition: 2s;
+  margin-bottom: 5%;
+  width: 150px;
+  height: 50px;
+  border: cornsilk 2px solid;
+  border-radius: 10px;
+  background-color: rgb(95, 33, 133);
+  color: wheat;
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+.Search button:hover {
+  transition: 2s;
+  background-color: rgb(163, 12, 193);
+}
+.Search .form-floating > .form-control:not(:-moz-placeholder-shown) {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.Search .form-floating .form-control:focus, .Search .form-floating > .form-control:not(:placeholder-shown) {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.Search .cityEnter {
+  font-size: 20px;
+  padding: 0px;
+}
+.Search input[type=text] {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 24px;
+  width: 300px;
+  text-align: center;
+  margin-top: 20px;
+  padding: 0px;
+}
+
+.BackButton button {
+  transition: 2s;
+  margin-bottom: 5%;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+  background-color: rgb(33, 118, 34);
+  border: cornsilk 2px solid;
+  color: rgb(245, 215, 160);
+  font-weight: bold;
+  font-size: 24px;
+  cursor: pointer;
+}
+.BackButton button:hover {
+  transition: 2s;
+  background-color: rgb(20, 152, 64);
+}
+
+.Weather {
+  text-shadow: 0 0 5px rgba(23, 36, 50, 0.5);
+  text-align: center;
+  margin-top: 10px;
+  justify-content: center;
+}
+.Weather .headerWeather {
+  min-width: 100%;
+  background-color: #234d5c;
+  border-radius: 10px 10px 0px 0px;
+}
+.Weather .centerWeather {
+  align-items: center;
+  min-width: 100%;
+  background: rgb(41, 126, 168);
+  background: linear-gradient(90deg, rgb(41, 126, 168) 0%, rgb(68, 162, 190) 36%, rgb(75, 168, 199) 63%, rgb(106, 199, 221) 100%);
+  border-radius: 0px 0px 10px 10px;
+}
+.Weather #temp {
+  font-size: 6rem;
+}
+.Weather #time {
+  font-size: 25px;
+}
+.Weather #weatherStatus {
+  text-transform: capitalize;
+}
+.Weather #tempFelling {
+  font-size: 3.5rem;
+  margin-left: 10px;
+}
+.Weather .bottomWeather {
+  background-color: #ffffff;
+  border-radius: 10px 10px 0px 0px;
+  padding: 10px;
+  margin-top: 10px;
+  text-shadow: none;
+  color: #2b2b2b;
+}
+.Weather .bottomWeather .WeatherToday {
+  font-size: 1.25rem;
+}
+.Weather .middleInfoWeather {
+  text-shadow: none;
+  color: #2b2b2b;
+  background-color: #ffffff;
+  border-radius: 0px 0px 10px 10px;
+  margin-bottom: 10px;
+}
+.Weather .middleInfoWeather .middleItems {
+  border-top: 1px solid #dedede;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+.Weather .tableInfo {
+  background-color: #ffffff;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-shadow: none;
+  color: #2b2b2b;
+}
+
+.middleItemTable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowBottom {
+  border-bottom: 1px solid #dedede;
+  border-top: 1px solid #dedede;
+}
+
+.clouds {
+  height: 100%;
+  width: 100%;
+}
+
+.clouds2 {
+  height: 30%;
+  width: 30%;
+}
+
+.ExitButton button {
+  background-color: transparent;
+  border: none;
+}
+.ExitButton img {
+  width: 50px;
+  height: 50px;
+}
+
+.ExitButton2 {
+  position: fixed;
+  left: 300px;
+}
+.ExitButton2 button {
+  border: none;
+  border-radius: 30%;
+  background-color: #848181;
+}
+.ExitButton2 img {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 1000px) {
+  .clouds2 {
+    width: 40%;
+  }
+  .clouds {
+    width: 50%;
+  }
+}
+@media (max-width: 768px) {
+  .Search {
+    padding: 50px;
+  }
+  .Search h1 {
+    font-size: 50px;
+  }
+  .clouds2 {
+    width: 55%;
+  }
+  .ExitButton2 {
+    left: 200px;
+  }
+}
+@media (max-width: 480px) {
+  .Search {
+    padding: 20px;
+  }
+  .Search h1 {
+    margin-bottom: 40px;
+  }
+  .Search h4 {
+    font-size: 20px;
+  }
+  .clouds2 {
+    width: 85%;
+  }
+  .Weather #temp {
+    font-size: 5rem;
+  }
+  .weatherForNext h1 {
+    font-size: 25px;
+  }
+  .ExitButton2 {
+    left: 35%;
+  }
+}/*# sourceMappingURL=style.css.map */

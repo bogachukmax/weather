@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   <link rel="stylesheet" href="./style/style.css">
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+   </style>
+   <title>Document</title>
+</head>
+<body>
+   <div class="container-fluid">
+      <div class="container Search" id="Search">
+         <h1>Check the weather in your city</h1>
+         <h2>Enter the name of the city below:</h2>
+         <form class="form-floating justify-content-center" style="display: flex;" id="regestraionForm">
+            <input class="form-control" id="floatingInputInvalid" placeholder="" value="">
+          </form>
+         <br>
+         <button class="Search_btn">Search</button>
+         <h4>Weather for 3 days in 3-hour increments</h4>
+      </div>
+      
+      <div class="container Weather" style="display: none;" id="Weather">
+            <div class="row align-items-center headerWeather">
+               <div class="col-lg-2"><h1 id="cityName"></h1></div>
+               <div class="col-lg-2"><h2 id="time" style="margin-bottom: 0;"></h2></div>
+               <div class="col-7 justify-content-end d-none d-lg-flex" style="display: flex;"><h3 id="dateWeather"></h3></div>
+               <div class="col-1 ExitButton d-none d-lg-block">
+                  <button><img src="./img/closebutton.png" alt=""></button>
+               </div>
+               <div class="ExitButton2 d-block d-lg-none">
+                  <button><img src="./img/closebutton.png" alt=""></button>
+               </div>
+            </div>
+
+            <div class="centerWeather row">
+               <div class="col-lg-2 col-4">
+                  <h3 id="temp"></h3>
+                  <h3 id="weatherStatus"></h3>
+               </div>
+               <div class="col-lg-10 col-8 justify-content-end" style="display: flex;">
+                  <img src="" alt="img" id="generalPng" class="clouds2">
+               </div>
+            </div>
+            
+            <div class="bottomWeather row">
+               <div class="col-12 justify-content-left" style="display: flex;">
+                  <div class="WeatherToday">Weather today - <span id="cityName2"></span></div>
+               </div>
+               <div class="col-12 justify-content-left" style="display: flex; margin-top: 20px;">
+                  <div class="WeatherToday">Feels like <div id="tempFelling"></div></div>
+               </div>
+            </div>
+
+            <div class="middleInfoWeather row">
+               <div class="col-6">
+                  <div class="middleItems">Max temp: <span id="tempMax"></span></div>
+                  <div class="middleItems">Min temp: <span id="tempMin"></span></div>
+                  <div class="middleItems">Humidity: <span id="humidity"></span></div>
+               </div>
+               <div class="col-6">
+                  <div class="middleItems">Pressure:  <span id="preasure"></span></div>
+                  <div class="middleItems">Sea Level:  <span id="seaLevel"></span></div>
+                  <div class="middleItems">Visibility:  <span id="visibility"></span></div>
+               </div>
+            </div>
+
+            <div style="margin-top: 25px;">
+               <div class="weatherForNext"><h1>Weather for the next 5 days</h1></div>
+               <div class="tableInfo row" id="tableWithInfo">
+               </div>
+            </div>
+
+            <div class="container BackButton" style="margin-top: 25px;">
+               <button id="Back_Button">Back</button>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <script src="./script/main.js"></script>
+</body>
+</html>
