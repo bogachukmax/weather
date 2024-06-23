@@ -34,7 +34,7 @@ function cityName() {
    } else{
       city.classList.remove(`is-invalid`);
       city.style.borderColor = '#0d3271';
-      const url = `http://api.openweathermap.org/data/2.5/forecast?q=${city.value}&lang=en&units=metric&appid=284391bdaa29d6c5d4b2c72daed3cce1`;
+      const url = `https://api.openweathermap.org/data/2.5/forecast?q=${city.value}&lang=en&units=metric&appid=284391bdaa29d6c5d4b2c72daed3cce1`;
       weather(url);
    }
 }
